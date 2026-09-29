@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Birthday Memories ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="memories-page">
+    <audio id="bgMusic" loop>
+        <source src="audio/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle" class="music-toggle" type="button">
+        🎵 <span>Music</span>
+    </button>
+    <div id="hearts" class="floating-hearts"></div>
+    <div id="sparkles" class="sparkles"></div>
+    <header class="section-hero reveal">
+        <p class="eyebrow">Chapter Two · The moments I keep close</p>
+        <h1>Our Birthday <span>Memories</span> ❤️</h1>
+        <p>Scroll slowly. Every picture has a little story behind it.</p>
+    </header>
+    <main class="memory-container">
+        <section class="memory-grid">
+            <article class="memory-card reveal"><img src="images/photo1.jpeg" alt="Our memory 1"
+                    onerror="this.src='https://placehold.co/900x1100/2b1224/f8dce8?text=Your+Photo+1'">
+                <div class="memory-caption"><span>01 · 2026.02.17</span>
+                    <div>
+                        <h3>Our first date memory</h3>
+                        <!-- <p>Add the story behind this photo here...</p> -->
+                    </div>
+                </div>
+            </article>
+            <article class="memory-card reveal"><img src="images/photo2.jpeg" alt="Our memory 2"
+                    onerror="this.src='https://placehold.co/900x1100/24132b/f8dce8?text=Your+Photo+2'">
+                <div class="memory-caption"><span>02 · 2025.11.24</span>
+                    <div>
+                        <h3>The last day of our school </h3>
+                        <!-- <p>Write what made this day special.</p> -->
+                    </div>
+                </div>
+            </article>
+            <article class="memory-card reveal"><img src="images/photo3.jpeg" alt="Our memory 3"
+                    onerror="this.src='https://placehold.co/900x1100/301527/f8dce8?text=Your+Photo+3'">
+                <div class="memory-caption"><span>03 · 2024.05.20</span>
+                    <div>
+                        <h3>One of my favourites</h3>
+                        <!-- <p>A tiny memory that still makes me smile.</p> -->
+                    </div>
+                </div>
+            </article>
+            <article class="memory-card reveal"><img src="images/photo4.jpeg" alt="Our memory 4"
+                    onerror="this.src='https://placehold.co/900x1100/241525/f8dce8?text=Your+Photo+4'">
+                <div class="memory-caption"><span>04 · 2025.10.01</span>
+                    <div>
+                        <h3>Just us</h3>
+                        <!-- <p>Replace this with your own little story.</p> -->
+                    </div>
+                </div>
+            </article>
+            <article class="memory-card wide reveal"><img src="images/photo5.jpeg" alt="Our memory 5"
+                    onerror="this.src='https://placehold.co/1400x850/321426/f8dce8?text=Your+Photo+5'">
+                <div class="memory-caption"><span>05 · 2024.06.17</span>
+                    <div>
+                        <h3>Because some moments deserve a whole page</h3>
+                        <!-- <p>Add your favourite memory here.</p> -->
+                    </div>
+                </div>
+            </article>
+            <article class="memory-card reveal"><img src="images/photo6.jpeg" alt="Our memory 6"
+                    onerror="this.src='https://placehold.co/900x1100/25162e/f8dce8?text=Your+Photo+6'">
+                <div class="memory-caption"><span>06 · 2026.02.17</span>
+                    <div>
+                        <h3>To be continued...</h3>
+                        <!-- <p>Our story is still being written.</p> -->
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="wish-gateway reveal">
+            <div class="gateway-heart">♥</div>
+            <p class="eyebrow">Chapter Three · One last secret</p>
+            <h2>Ready for your <span>real surprise?</span></h2>
+            <button id="wishBtn" class="primary-button" type="button">Show Your Birthday Wish 💌</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

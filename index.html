@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You, With Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="entry-page">
+  <div class="cinema-curtain left"></div>
+  <div class="cinema-curtain right"></div>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <div id="hearts" class="floating-hearts"></div>
+  <div id="sparkles" class="sparkles"></div>
+
+  <main class="entry-shell cinematic-entry">
+    <section id="introScene" class="cinematic-intro">
+      <p class="cinema-kicker">A little story made only for you</p>
+      <h1 class="intro-line">For the girl who owns<br><span>a special piece of my heart...</span></h1>
+      <div class="name-reveal"><span id="herName">THARMI</span></div>
+      <p class="intro-sub">There is a little surprise waiting behind one very special date.</p>
+      <button id="beginBtn" class="primary-button intro-button" type="button">Begin Our Story <span>♥</span></button>
+      <div class="skip-note">take a breath... and press begin ✨</div>
+    </section>
+
+    <section id="secretScene" class="glass-card entry-card secret-scene hidden">
+      <div class="mini-heart">♥</div>
+      <p class="eyebrow">Chapter One · Our little secret</p>
+      <h1>Happy Birthday,<br><span>Dear Best Friend</span> ❤️</h1>
+      <p class="intro"><span id="typingText"></span><span class="typing-caret">|</span></p>
+      <div class="secret-box">
+        <label for="loveDate">Enter your love date 💕</label>
+        <div class="input-wrap"><span>♥</span><input id="loveDate" type="password" inputmode="numeric" maxlength="4"
+            placeholder="Enter the date..." autocomplete="off"></div>
+        <button id="hintBtn" class="text-button" type="button">View Your Hint</button>
+        <p id="hint" class="hint hidden">No hint... only you know that date ❤️</p>
+        <button id="unlockBtn" class="primary-button" type="button">Unlock My Surprise <span>→</span></button>
+        <p id="error" class="error-message" aria-live="polite"></p>
+      </div>
+      <div class="tiny-note">some stories are worth remembering forever ✨</div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

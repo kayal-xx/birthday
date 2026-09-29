@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="wish-page">
+  <canvas id="confetti"></canvas>
+  <audio id="bgMusic" loop preload="metadata">
+    <source src="audio/birthday-music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle music">♪ <span>Music</span></button>
+  <div id="hearts" class="floating-hearts"></div>
+  <div id="sparkles" class="sparkles"></div>
+
+  <section id="secretGate" class="secret-gate">
+    <div class="glass-card entry-card reveal">
+      <div class="mini-heart">♥</div>
+      <p class="eyebrow">The final little secret</p>
+      <h1>Enter Our Love<br><span>Licence Date</span> 💕</h1>
+      <p class="intro">You know this one too... don't you?</p>
+
+      <div class="secret-box">
+        <label for="licenceDate">Enter the special date</label>
+        <div class="input-wrap">
+          <span>♥</span>
+          <input id="licenceDate" type="password" inputmode="numeric" maxlength="4" placeholder="Enter the date..."
+            autocomplete="off">
+        </div>
+        <button id="finalUnlockBtn" class="primary-button" type="button">Unlock Your Birthday Wish ❤️</button>
+        <p id="finalError" class="error-message" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <main id="birthdayContent" class="birthday-content hidden">
+    <section class="celebration-hero">
+      <div class="balloon balloon-a">♥</div>
+      <div class="balloon balloon-b">♥</div>
+      <div class="cake">🎂</div>
+      <p class="eyebrow">Today is all about you</p>
+      <h1>Happy Birthday<br><span>My Dear ❤️</span></h1>
+      <p class="hero-sub">A tiny website for someone who means a little more than words can say.</p>
+      <div class="scroll-cue">scroll to see your surprise <span>↓</span></div>
+    </section>
+
+    <section class="wish-letter reveal">
+      <p class="eyebrow">A message from my heart</p>
+      <h2>For You, On Your Special Day ❤️</h2>
+      <div class="letter typing-letter">
+        <div id="wishTyping"></div><span class="typing-caret">|</span>
+        <p class="signature">With all my love,<br><span>Me ❤️</span></p>
+      </div>
+    </section>
+
+    <section class="video-section reveal">
+      <p class="eyebrow">A little something for you</p>
+      <h2>Press Play 🎥❤️</h2>
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" poster="images/video-poster.jpg">
+          <source src="video/birthday.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+      <p class="video-note">Replace <code>video/birthday.mp4</code> with your own video.</p>
+    </section>
+
+    <section class="final-message reveal">
+      <div class="final-heart">♥</div>
+      <h2>Once Again...</h2>
+      <h1>Happy Birthday ❤️</h1>
+      <p>You will always have a special place in my heart.</p>
+      <div class="forever">∞</div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
